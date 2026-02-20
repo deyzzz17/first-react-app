@@ -1,6 +1,5 @@
-import { Fragment } from "react";
 
-function ListGroup() {
+export function ListGroup() {
   const items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
 
   return (
@@ -15,4 +14,3 @@ function ListGroup() {
   );
 }
 
-export default ListGroup;
