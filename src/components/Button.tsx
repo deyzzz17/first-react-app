@@ -1,13 +1,14 @@
 import { ReactNode } from "react";
 interface Props {
   children: ReactNode;
+  color?: "primary" | "secondary" | "danger";
   onClick: () => void;
 }
 
-function Button({ children, onClick }: Props) {
+function Button({ children, color = "danger", onClick }: Props) {
   return (
     <>
-      <button className="btn btn-danger" onClick={onClick}>
+      <button className={"btn btn-" + color} onClick={onClick}>
         {children}
       </button>
     </>

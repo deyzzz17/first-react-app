@@ -5,7 +5,11 @@ interface Props {
 }
 
 function Alert({ children }: Props) {
-  return <div className="alert alert-danger">{children}</div>
+  return (
+    <div className="alert alert-danger alert-dismissible" role="alert">
+      {children}
+    </div>
+  );
 }
 
 export default Alert;
